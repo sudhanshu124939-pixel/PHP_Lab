@@ -1,30 +1,36 @@
-<?php
-define("COLLEGE_NAME", "Marwadi University");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 2 | Index Page</title>
 
-$studentName = "Sudhanshu Tiwari";
-$semester = "Semester 4";
-$Python = 78;
-$php = 82;
-$OS = 75;
-$CN = 80;
-$DBMS = 85;
-
-$total = $Python + $php + $OS + $CN + $DBMS;
-$percentage = $total / 5;
-
-// Display result
-echo "<h2>" . COLLEGE_NAME . "</h2>";
-echo "<h3>Previous Semester Result</h3>";
-
-echo "Student Name: " . $studentName . "<br>";
-echo "Semester: " . $semester . "<br><br>";
-
-echo "Python Marks: " . $Python . "<br>";
-echo "PHP Marks: " . $php . "<br>";
-echo "Operating Systems Marks: " . $OS . "<br>";
-echo "Computer Networks Marks: " . $CN . "<br>";
-echo "Database Management Systems Marks: " . $DBMS . "<br><br>";
-
-echo "Total Marks: " . $total . "<br>";
-echo "Percentage: " . $percentage . "%<br>";
-?>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>LAB 2 | Index Page</h1>
+        <p>Welcome to the index page!</p>
+        <br>
+        <a href="login.php">Go to Login Page</a>
+        <a href="registration.php">Go to Register Page</a>
+    </center>
+</body>
+</html>
